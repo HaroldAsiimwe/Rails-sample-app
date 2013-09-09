@@ -8,9 +8,9 @@ describe "Static Pages" do
       page.should have_content('Sample App')
     end
 
-    it "sould have the right title" do 
-    	visit 'static_pages/home'
-    	page.should have_selector('title', :text => 'Rails sample Application | Home')
+    it "should have the right title" do 
+    	visit '/static_pages/home'
+    	page.should have_selector('title', :text => ' | Home')
     end
   end
 
